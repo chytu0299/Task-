@@ -95,6 +95,10 @@ function insert(person) {
             <button type="button" class="btn btn-primary btn-sm" onclick="Delete(this)">Delete</button>`;
          
         console.log(Object.values(person));
+        sessionStorage.setItem("name", person.name);
+        sessionStorage.setItem("email",person.email);
+        sessionStorage.setItem("age",person.age);
+        sessionStorage.setItem("phonenumber",person.phonenumber);
                 
         document.getElementById("fm").reset();
     }
