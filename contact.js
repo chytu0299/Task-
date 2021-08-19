@@ -132,4 +132,18 @@ function update(person){
     document.getElementById("fm").reset();
     }
 }
+function display(){
+    console.log("chaitanya varma");
+}
 
+setTimeout(display,3000)
+
+function eg(){
+    var name = 'varma';
+    function neweg(){
+        console.log(name);
+    }
+    return neweg;
+}
+var ba=eg();
+ba();
